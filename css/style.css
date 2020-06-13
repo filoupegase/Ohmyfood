@@ -24,15 +24,12 @@ main {
   box-sizing: border-box;
 }
 
-article {
-  margin: 30px 0;
-}
-
 div.flexdir {
   display: flex;
-  margin-bottom: 27px;
+  margin: 27px 0;
 }
 div.flexdir-last {
+  margin-top: 26px;
   display: flex;
 }
 
@@ -70,7 +67,7 @@ justify-content: center;
     line-height: 2;
     padding: 0 37px;
     font-size: 1.25rem;
-    margin-top: 27px;
+    margin: 27px 0;
     text-align: center;
     color: #fdcb6e;
     border-radius: 7px;
