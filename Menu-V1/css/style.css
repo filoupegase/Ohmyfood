@@ -1,0 +1,58 @@
+body {
+  background-color: #ffcdd2;
+  margin: auto;
+  padding: 70px;
+  font-family: 'Bradley Hand', 'cursive';
+}
+
+header.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: auto;
+  font-weight: 900;
+  font-size: 45px;
+}
+
+i.fab.fa-itunes-note{
+  font-size: 7em;
+  font-weight: 100;
+  color: #BA68C8;
+}
+
+i.fa-itunes-note.deux{
+  font-size: 3em;
+  font-weight: 100;
+  color: #BA68C8;
+}
+
+
+header.section {
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+h2::before, h2::after {
+  position: absolute;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: black;
+}
+h2::before {
+    margin-left: -50%;
+    text-align: right;
+}
+h2::after {
+  margin-left: 50px;
+}
