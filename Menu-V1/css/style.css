@@ -1,7 +1,11 @@
+html{
+  background-color: black;
+}
+
 body {
   background-color: #ffcdd2;
-  margin: auto;
-  padding: 70px;
+  margin: 18px 90px;
+  padding: 60px 110px 60px 110px;
   font-family: 'Bradley Hand', 'cursive';
 }
 
@@ -11,35 +15,39 @@ header.header{
   align-items: center;
 }
 
-h1 {
-  margin: auto;
-  font-weight: 900;
-  font-size: 45px;
-}
-
 i.fab.fa-itunes-note{
   font-size: 7em;
   font-weight: 100;
-  color: #BA68C8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e72c83), to(#a742c6));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
-i.fa-itunes-note.deux{
-  font-size: 3em;
-  font-weight: 100;
-  color: #BA68C8;
+h1 {
+  margin: auto;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: 'Chalkduster', 'fantasy';
+  font-weight: lighter;
 }
 
-
-header.section {
-  text-align: center;
+div.inline{
+  display: flex;
+  justify-content: space-between;
 }
-
+section {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
 h2{
-  font-size: 30px;
+  font-size: 37px;
   position: relative;
   overflow: hidden;
   text-align: center;
+  margin-bottom: 13px;
 }
+
 h2::before, h2::after {
   position: absolute;
      top: 51%;
@@ -55,4 +63,34 @@ h2::before {
 }
 h2::after {
   margin-left: 50px;
+}
+
+p {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 13px;
+}
+
+p.price{
+  font-family: 'Chalkduster', 'fantasy';
+}
+
+i.fa-itunes-note.deux{
+  font-size: 4.3em;
+  font-weight: 100;
+  color: #BA68C8;
+}
+
+h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: 'Chalkduster', 'fantasy';
+  font-weight: lighter;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
