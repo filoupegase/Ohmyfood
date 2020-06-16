@@ -30,7 +30,6 @@ h1 {
   font-size: 65px;
   margin-bottom: 90px;
   font-family: 'Snell Roundhand', 'cursive';
-  font-weight: bolder;
   background: linear-gradient(165deg, #ff8000 0%, #9480b3 50%, #562dd2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
