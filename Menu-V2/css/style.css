@@ -35,8 +35,8 @@ h1 {
   font-family: 'Snell Roundhand', 'cursive';
   font-weight: bolder;
   background: -webkit-gradient(linear, right top, right bottom, from(#cc6600), to(#562dd2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
 div.inline{
@@ -63,16 +63,16 @@ h2{
 
 h2.primary::before, h2::after {
   position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 50%;
-  height: 3px;
-  content: '';
-  background-color: #cc6600;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: #cc6600;
 }
 h2.primary::before {
-  margin-left: -50%;
-  text-align: right;
+    margin-left: -50%;
+    text-align: right;
 }
 h2.primary::after {
   margin-left: 50px;
@@ -80,32 +80,32 @@ h2.primary::after {
 
 h2.secondary::before, h2::after {
   position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 50%;
-  height: 3px;
-  content: '';
-  background-color: #79609f;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: #79609f;
 }
 h2.secondary::before {
-  margin-left: -50%;
-  text-align: right;
+    margin-left: -50%;
+    text-align: right;
 }
 h2.secondary::after {
   margin-left: 50px;
 }
 h2.purple::before, h2::after {
   position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 50%;
-  height: 3px;
-  content: '';
-  background-color: #562dd2;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: #562dd2;
 }
 h2.purple::before {
-  margin-left: -50%;
-  text-align: right;
+    margin-left: -50%;
+    text-align: right;
 }
 h2.purple::after {
   margin-left: 50px;
