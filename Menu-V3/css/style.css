@@ -14,15 +14,13 @@ header.header{
   align-items: center;
 }
 
-
 h1 {
   margin: 0px;
-  font-weight: bolder;
+  font-weight: lighter;
   font-size: 75px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-family: 'Bradley Hand', 'cursive';
-  font-weight: bolder;
-  background: -webkit-gradient(linear, right top, right bottom, from(#3333ff), to(#33ccff));
+  background: linear-gradient(170deg, #0000cc 0%, #99e6ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -35,6 +33,7 @@ section {
   margin-top: 40px;
   margin-bottom: 70px;
 }
+
 div.padding-section {
   padding: 0 120px;
 }
@@ -62,11 +61,11 @@ h2.primary::before, h2::after {
 h2.primary::before {
   margin-left: -50%;
   text-align: right;
-  background-color: #3333ff;
+  background-color: #0000cc;
 }
 h2.primary::after {
   margin-left: 50px;
-  background-color: #3333ff;
+  background-color: #0000cc;
   height: 5px;
 }
 
@@ -100,18 +99,18 @@ h2.three::before, h2::after {
 h2.three::before {
   margin-left: -50%;
   text-align: right;
-  background-color: #33ccff;
+  background-color: #99e6ff;
 }
 h2.three::after {
   margin-left: 50px;
   height: 5px;
-  background-color: #33ccff;
+  background-color: #99e6ff;
 }
 
 p {
   font-size: 22px;
   font-weight: bolder;
-  margin-bottom: 13px;
+  margin-bottom: 0;
   font-family: 'Bradley Hand', 'cursive';
 }
 
@@ -120,24 +119,4 @@ p.price{
   font-weight: bold;
   font-size: 30px;
   margin-top: 22px;
-}
-
-i.fa-itunes-note.deux{
-  font-size: 4.3em;
-  font-weight: 100;
-  color: #BA68C8;
-}
-
-h3{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 15px;
-  font-size: 30px;
-  font-family: 'Chalkduster', 'fantasy';
-  font-weight: lighter;
-}
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

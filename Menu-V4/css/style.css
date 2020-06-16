@@ -14,20 +14,15 @@ header.header{
   align-items: center;
 }
 
-header.section{
-  margin-bottom: 23px;
-}
-
-
 h1 {
   margin: 0px;
-  font-weight: lighter;
+  font-weight: 100;
   font-size: 75px;
   margin-bottom: 50px;
   font-family: 'Apple Chancery', 'cursive';
   background: linear-gradient(140deg, #00802b 0%, #aaff80 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 div.inline{
@@ -89,24 +84,4 @@ p.price{
   font-weight: bold;
   font-size: 30px;
   margin-top: 22px;
-}
-
-i.fa-itunes-note.deux{
-  font-size: 4.3em;
-  font-weight: 100;
-  color: #BA68C8;
-}
-
-h3{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 15px;
-  font-size: 30px;
-  font-family: 'Chalkduster', 'fantasy';
-  font-weight: lighter;
-}
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
