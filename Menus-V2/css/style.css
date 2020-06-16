@@ -1,0 +1,143 @@
+html{
+  background-color: black;
+}
+
+body {
+  background-color: #F7FFF8;
+  margin: 18px 90px;
+  padding: 150px 40px 100px 40px;
+  font-family: 'URW Chancery L', 'cursive';
+  font-weight: 100;
+}
+
+header.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.primary{
+  color: #cc6600;
+}
+.secondary{
+  color: #79609f;
+}
+.purple {
+  color: #562dd2;
+}
+
+h1 {
+  margin: 0px;
+  font-weight: bolder;
+  font-size: 65px;
+  margin-bottom: 90px;
+  font-family: 'Snell Roundhand', 'cursive';
+  font-weight: bolder;
+  background: -webkit-gradient(linear, right top, right bottom, from(#cc6600), to(#562dd2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+div.inline{
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+div.padding-section {
+  padding: 0 120px;
+}
+h2{
+  font-size: 37px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 13px;
+  margin-top: 0px;
+  font-family: 'Snell Roundhand', 'cursive';
+  font-weight: lighter;
+}
+
+h2.primary::before, h2::after {
+  position: absolute;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: #cc6600;
+}
+h2.primary::before {
+    margin-left: -50%;
+    text-align: right;
+}
+h2.primary::after {
+  margin-left: 50px;
+}
+
+h2.secondary::before, h2::after {
+  position: absolute;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: #79609f;
+}
+h2.secondary::before {
+    margin-left: -50%;
+    text-align: right;
+}
+h2.secondary::after {
+  margin-left: 50px;
+}
+h2.purple::before, h2::after {
+  position: absolute;
+     top: 51%;
+     overflow: hidden;
+     width: 50%;
+     height: 3px;
+     content: '';
+     background-color: #562dd2;
+}
+h2.purple::before {
+    margin-left: -50%;
+    text-align: right;
+}
+h2.purple::after {
+  margin-left: 50px;
+}
+
+p {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 13px;
+  font-family: 'Apple Chancery', 'cursive';
+}
+
+p.price{
+  font-family: 'Snell Roundhand', 'cursive';
+}
+
+i.fa-itunes-note.deux{
+  font-size: 4.3em;
+  font-weight: 100;
+  color: #BA68C8;
+}
+
+h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: 'Chalkduster', 'fantasy';
+  font-weight: lighter;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
