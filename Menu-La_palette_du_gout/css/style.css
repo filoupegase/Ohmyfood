@@ -4,7 +4,7 @@ body {
   height: auto;
 }
 
-header {
+header.header-body {
   background-color: #778beb;
   padding: 19px 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.08);
@@ -35,14 +35,14 @@ h2.title-section {
   font-weight: 500;
 }
 
-main {
+main.main-body {
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-article{
+article.article-body{
   margin-bottom: 100px;
 }
 
@@ -72,9 +72,85 @@ a.link-footer {
 
 /*$$$$$$$$$$$$$$$$$$$$$$$PAS TOUCHE^^^^^^^^^$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-section {
-  height: 1100px;
-  width: 950px;
+main.menu {
+  height: auto;
+  width: auto;
   background-color: #F9FFF7;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 0.5px rgba(0,0,0,0.08);
+  padding: 40px 50px 30px 50px;
+}
+
+header.header-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.titre-menu {
+  margin: 0 0 20px 0;
+  font-weight: 100;
+  font-size: 70px;
+  font-family: 'Apple Chancery', 'cursive';
+  background: linear-gradient(140deg, #00802b 0%, #aaff80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div.inline{
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  margin-bottom: 70px;
+}
+section.section-last {
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+div.padding-section {
+}
+
+h2.htitre-menu{
+  font-size: 22px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 13px;
+  margin-top: 0px;
+  font-family: 'Bradley Hand', 'cursive';
+  font-weight: lighter;
+  color: black;
+}
+
+h2.htitre-menu::before, h2.htitre-menu::after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 5px;
+  content: '';
+}
+h2.htitre-menu::before {
+  margin-left: -50%;
+  text-align: right;
+  background: linear-gradient(to right, #00802b, #aaff80);
+}
+h2.htitre-menu::after {
+  margin-left: 50px;
+  background: linear-gradient(to left, #00802b, #aaff80);
+  height: 5px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  font-family: 'Bradley Hand', 'cursive';
+}
+
+p.price{
+  font-family: 'Bradley Hand', 'cursive';
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 22px;
 }
