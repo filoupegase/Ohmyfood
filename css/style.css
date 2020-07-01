@@ -5,8 +5,15 @@ body {
 }
 /*box-sizing: border-box;*/
 
-header {
+.color-primary {
   background-color: #778beb;
+}
+
+.color-secondary {
+  color: #ffc966;
+}
+
+header {
   padding: 19px 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.08);
   width: 100%;
@@ -14,7 +21,6 @@ header {
 }
 
 h1 {
-  color: #ffc966;
   margin: 0;
   text-align: center;
   letter-spacing: -1.5px;
@@ -53,7 +59,7 @@ a.link-section{
   color: initial;
 }
 
-section {
+section.menu-prev {
   height: 450px;
   width: 290px;
   padding: 30px;
@@ -64,19 +70,25 @@ section {
   text-align: center;
 }
 
-section.first-section{
+section.menu-prev--first{
   background-color: #FCE4EC;
   margin-right: 14px;
 }
-section.second-section{
+section.menu-prev.second{
   background-color: #FFFAF6;
   margin-left: 14px;
+  transform: scale(1);
+  transition: transform 400ms;
 }
-section.third-section{
+section.menu-prev.second:hover {
+  transform: scale(1.1);
+}
+
+section.menu-prev.third{
   background-color: #e9f9fb;
   margin-right: 14px;
 }
-section.fourth-section{
+section.menu-prev.fourth{
   background-color: #F9FFF7;
   margin-left: 14px;
 }
@@ -87,74 +99,69 @@ i.fab.fa-itunes-note{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h2.first {
+
+h2.menu-prev__title {
   margin: 0;
+}
+
+h3.menu-prev__byline {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+h2.menu-prev__title.first {
   font-weight: 900;
   font-size: 27px;
-  margin-bottom: 0;
   font-family: 'Chalkduster', 'fantasy';
   font-weight: lighter;
 }
-h3.first {
+h3.menu-prev__byline.first {
   color: black;
   font-size: 35px;
   font-weight: 100;
   font-family: 'Bradley Hand', 'cursive';
-  margin-bottom: 0;
-  margin-top: 10px;
 }
-h2.second {
-  margin: 0px;
+h2.menu-prev__title.second {
   font-weight: bolder;
   font-size: 32px;
-  margin-bottom: 0;
   font-family: 'Snell Roundhand', 'cursive';
   background: linear-gradient(165deg, #ff8000 0%, #9480b3 50%, #562dd2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h3.second {
+h3.menu-prev__byline.second {
   color: #cc6600;
   font-size: 42px;
   font-weight: 100;
   font-family: serif;
-  margin-bottom: 0;
-  margin-top: 10px;
 }
 
-h2.third {
-  margin: 0px;
+h2.menu-prev__title.third {
   font-weight: lighter;
   font-size: 32px;
-  margin-bottom: 0;
   font-family: 'Bradley Hand', 'cursive';
   background: linear-gradient(170deg, #0000cc 0%, #99e6ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h3.third{
+h3.menu-prev__byline.third{
   color: #3333ff;
   font-size: 42px;
   font-family: 'Bradley Hand', 'cursive';
-  margin-bottom: 0;
-  margin-top: 10px;
 }
-h2.fourth {
-  margin: 0px;
+
+h2.menu-prev__title.fourth {
   font-weight: 100;
   font-size: 36px;
-  margin-bottom: 0;
   font-family: 'Apple Chancery', 'cursive';
   background: linear-gradient(140deg, #00802b 0%, #aaff80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h3.fourth{
+h3.menu-prev__byline.fourth{
   color: #00b33c;
   font-size: 42px;
   font-family: 'Bradley Hand', 'cursive';
-  margin-bottom: 0;
-  margin-top: 10px;
 }
 
 div.button{
@@ -163,7 +170,7 @@ div.button{
   justify-content: center;
 }
 
-.styled {
+a.styled {
   border: 0;
   line-height: 2;
   padding: 0 37px;
@@ -171,25 +178,22 @@ div.button{
   margin-top: 27px;
   margin-bottom: 48px;
   text-align: center;
-  color: #ffc966;
   border-radius: 7px;
-  background-color: #778beb;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 0.4px rgba(0,0,0,0.08);
 }
 a.styled {
   text-decoration: none;
 }
-.styled:hover{
+a.styled:hover{
   cursor: pointer;
   opacity: 0.95;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 0.4px rgba(0,0,0,0.08);
 }
-.styled:focus {
+a.styled:focus {
   outline: none;
 }
 
 footer {
-  background-color: #778beb;
   padding: 14px 23px;
   box-shadow: 2px 0 0 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.08);
   height: auto;
@@ -207,7 +211,6 @@ nav {
 
 a.link-footer {
   font-size: 1.2em;
-  color: #ffc966;
   margin: 0;
   text-decoration: none;
 }
