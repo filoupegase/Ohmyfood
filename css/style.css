@@ -40,18 +40,14 @@ main {
   width: auto;
 }
 
-article{
+div.article{
   margin: 30px 0;
 }
 
-div.flexdir {
-  display: flex;
-  margin-bottom: 27px;
-  justify-content: space-between;
-}
-div.flexdir-last {
-  display: flex;
-  justify-content: space-between;
+div.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
 }
 
 a.link-section{
@@ -72,11 +68,9 @@ section.menu-prev {
 
 section.menu-prev--first{
   background-color: #FCE4EC;
-  margin-right: 14px;
 }
 section.menu-prev.second{
   background-color: #FFFAF6;
-  margin-left: 14px;
   transform: scale(1);
   transition: transform 400ms;
 }
@@ -86,11 +80,9 @@ section.menu-prev.second:hover {
 
 section.menu-prev.third{
   background-color: #e9f9fb;
-  margin-right: 14px;
 }
 section.menu-prev.fourth{
   background-color: #F9FFF7;
-  margin-left: 14px;
 }
 i.fab.fa-itunes-note{
   font-size: 3.5em;
