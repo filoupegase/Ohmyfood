@@ -30,27 +30,23 @@ body {
   margin: auto;
   font-family: Arial, sans-serif;
 }
-/*box-sizing: border-box;*/
 
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
-  width: auto;
 }
 
 div.article{
-  margin: 65px 0;
-}
+  margin: 65px 0 45px 0; }
 
 div.container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 42px;
+  grid-gap: 45px 50px;
 }
 
-section.menu-prev {
+section.block-menu {
   height: 450px;
   width: 290px;
   padding: 30px;
@@ -59,99 +55,87 @@ section.menu-prev {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-section.menu-prev--first{
-  background-color: #FCE4EC;
-}
-section.menu-prev.second{
-  background-color: #FFFAF6;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-section.menu-prev.second:hover {
-  transform: scale(1.1);
-}
-
-section.menu-prev.third{
-  background-color: #e9f9fb;
-}
-section.menu-prev.fourth{
-  background-color: #F9FFF7;
-}
-
-h2.menu-prev__title {
-  margin: 0;
-}
-
-h3.menu-prev__byline {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-h2.menu-prev__title.first {
-  font-weight: 900;
-  font-size: 27px;
-  font-family: 'Chalkduster', 'fantasy';
-  font-weight: lighter;
-}
-h3.menu-prev__byline.first {
-  color: black;
-  font-size: 35px;
-  font-weight: 100;
-  font-family: 'Bradley Hand', 'cursive';
-}
-h2.menu-prev__title.second {
-  font-weight: bolder;
-  font-size: 32px;
-  font-family: 'Snell Roundhand', 'cursive';
-  background: linear-gradient(165deg, #ff8000 0%, #9480b3 50%, #562dd2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h3.menu-prev__byline.second {
-  color: #cc6600;
-  font-size: 42px;
-  font-weight: 100;
-  font-family: serif;
-}
-
-h2.menu-prev__title.third {
-  font-weight: lighter;
-  font-size: 32px;
-  font-family: 'Bradley Hand', 'cursive';
-  background: linear-gradient(170deg, #0000cc 0%, #99e6ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h3.menu-prev__byline.third{
-  color: #3333ff;
-  font-size: 42px;
-  font-family: 'Bradley Hand', 'cursive';
-}
-
-h2.menu-prev__title.fourth {
-  font-weight: 100;
-  font-size: 36px;
-  font-family: 'Apple Chancery', 'cursive';
-  background: linear-gradient(140deg, #00802b 0%, #aaff80 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h3.menu-prev__byline.fourth{
-  color: #00b33c;
-  font-size: 42px;
-  font-family: 'Bradley Hand', 'cursive';
+  &--lne {
+    background-color: $bg-color-lne;  }
+  &--lcf {
+    background-color: $bg-color-lcf;  }
+  &--ldp {
+    background-color: $bg-color-ldp;  }
+  &--lpg {
+    background-color: $bg-color-lpg;  }
+  h2.block-menu__title {
+    margin: 0;
+    &--lne {
+      font-weight: 900;
+      font-size: 27px;
+      font-family: 'Chalkduster', 'fantasy';
+    }
+    &--lcf {
+      font-weight: bolder;
+      font-size: 32px;
+      font-family: 'Snell Roundhand', 'cursive';
+      background: linear-gradient(165deg, #ff8000 0%, #9480b3 50%, #562dd2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--ldp {
+      font-weight: lighter;
+      font-size: 32px;
+      font-family: 'Bradley Hand', 'cursive';
+      background: linear-gradient(170deg, #0000cc 0%, #99e6ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--lpg {
+      font-weight: 100;
+      font-size: 36px;
+      font-family: 'Apple Chancery', 'cursive';
+      background: linear-gradient(140deg, #00802b 0%, #aaff80 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  h3.block-menu__byline {
+    margin-bottom: 0;
+    margin-top: 10px;
+    &--lne {
+      color: black;
+      font-size: 35px;
+      font-weight: 100;
+      font-family: 'Bradley Hand', 'cursive';
+    }
+    &--lcf {
+      color: #cc6600;
+      font-size: 42px;
+      font-weight: 100;
+      font-family: serif;
+    }
+    &--ldp {
+      color: #3333ff;
+      font-size: 42px;
+      font-family: 'Bradley Hand', 'cursive';
+    }
+    &--lpg {
+      color: #00b33c;
+      font-size: 42px;
+      font-family: 'Bradley Hand', 'cursive';
+    }
+  }
 }
 
 div.btn{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 
-@media screen and
-(max-width:1250px){
+@media screen
+and (min-width:1500px){
+  header {
+    background-color: red;
+  }
 }
 
 /* ----------- 480px - 819px ----------- */
