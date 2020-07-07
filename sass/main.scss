@@ -99,26 +99,16 @@ section.block-menu {
     margin-bottom: 0;
     margin-top: 10px;
     &--lne {
-      color: black;
-      font-size: 35px;
-      font-weight: 100;
-      font-family: 'Bradley Hand', 'cursive';
+      @include block-menu__byline--lne(#000000);
     }
     &--lcf {
-      color: #cc6600;
-      font-size: 42px;
-      font-weight: 100;
-      font-family: serif;
+      @include block-menu__byline--lcf(#cc6600);
     }
     &--ldp {
-      color: #3333ff;
-      font-size: 42px;
-      font-family: 'Bradley Hand', 'cursive';
+      @include block-menu__byline--ldp(#3333ff);
     }
     &--lpg {
-      color: #00b33c;
-      font-size: 42px;
-      font-family: 'Bradley Hand', 'cursive';
+      @include block-menu__byline--lpg(#00b33c);
     }
   }
 }
