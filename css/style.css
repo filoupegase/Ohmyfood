@@ -1,39 +1,25 @@
-/*@import "./base/base";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";*/
-body {
-  margin: auto;
-  font-family: Arial, sans-serif; }
-
-/*box-sizing: border-box;*/
-.color-secondary {
-  color: #ffc966; }
-
-header {
+header.header {
   padding: 19px 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.08);
   width: 100%;
-  height: auto;
   background-color: #4FA146; }
 
-h1 {
+a.header-link {
+  text-decoration: none;
+  color: initial; }
+
+h1.header-title {
   margin: 0;
   text-align: center;
   letter-spacing: -1.5px;
   font-size: 3.1em;
   color: #FAC055; }
 
-a.link-header {
-  text-decoration: none;
-  color: initial; }
+body {
+  margin: auto;
+  font-family: Arial, sans-serif; }
 
+/*box-sizing: border-box;*/
 main {
   display: flex;
   align-items: center;

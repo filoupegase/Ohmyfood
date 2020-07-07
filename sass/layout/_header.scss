@@ -1,0 +1,16 @@
+header.header {
+  padding: 19px 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.08);
+  width: 100%;
+  background-color: $color-primary; }
+
+a.header-link {
+   text-decoration: none;
+   color: initial;  }
+
+h1.header-title {
+  margin: 0;
+  text-align: center;
+  letter-spacing: -1.5px;
+  font-size: 3.1em;
+  color: $color-secondary;  }
