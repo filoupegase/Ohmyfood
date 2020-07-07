@@ -41,18 +41,13 @@ main {
 }
 
 div.article{
-  margin: 30px 0;
+  margin: 65px 0;
 }
 
 div.container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 25px;
-}
-
-a.link-section{
-  text-decoration: none;
-  color: initial;
+  grid-gap: 42px;
 }
 
 section.menu-prev {
@@ -83,13 +78,6 @@ section.menu-prev.third{
 }
 section.menu-prev.fourth{
   background-color: #F9FFF7;
-}
-i.fab.fa-itunes-note{
-  font-size: 3.5em;
-  font-weight: 100;
-  background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 h2.menu-prev__title {
@@ -160,4 +148,31 @@ div.btn{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and
+(max-width:1250px){
+}
+
+/* ----------- 480px - 819px ----------- */
+@media screen
+and (min-width:481px)
+and (max-width:819px){
+  div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px; }
+  div.article{
+    margin: 50px 0; }
+}
+
+/* ----------- 0 - 480px ----------- */
+@media screen
+and (max-width:480px){
+  div.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; }
+  div.article{
+    margin: 30px 0; }
 }
