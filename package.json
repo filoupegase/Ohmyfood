@@ -1,0 +1,19 @@
+{
+  "name": "p3_loison_corentin",
+  "version": "1.0.0",
+  "description": "OC_P3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filoupegase/ohmyfood_OC.git"
+  },
+  "author": "Filoupegase",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filoupegase/ohmyfood_OC/issues"
+  },
+  "homepage": "https://github.com/filoupegase/ohmyfood_OC#readme"
+}
