@@ -1,28 +1,3 @@
-body {
-  margin: auto;
-  font-family: Arial, sans-serif;
-  height: auto;
-}
-
-header.header-body {
-  background-color: #778beb;
-  padding: 19px 0;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.08);
-  width: 100%;
-  height: auto;
-}
-
-h1.title-header {
-  color: #ffc966;
-  margin: 0;
-  text-align: center;
-  letter-spacing: -1.5px;
-  font-size: 3.1em;
-}
-
-a.link-header {
-  text-decoration: none;
-}
 
 h2.title-section {
   color: black;
@@ -35,39 +10,8 @@ h2.title-section {
   font-weight: 500;
 }
 
-main.main-body {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 article.article-body{
   margin-bottom: 100px;
-}
-
-footer {
-  background-color: #778beb;
-  padding: 14px 23px;
-  box-shadow: 2px 0 0 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.08);
-  height: auto;
-  width: 100%;
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-a.link-footer {
-  font-size: 1.2em;
-  color: #ffc966;
-  margin: 0;
-  text-decoration: none;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$^^^^^^^^^^PAS TOUCHE^^^^^^^^^$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/

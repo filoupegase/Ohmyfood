@@ -10,14 +10,14 @@
 @import './components/slider';
 
 @import './layout/navigation';
-@import './layout/grid';
+@import './layout/body';
 @import './layout/header';
 @import './layout/footer';
 @import './layout/sidebar';
-@import './layout/forms';
+@import './layout/main';
 
-@import './pages/home';
-@import './pages/about';
+@import 'pages/lanoteenchantee';
+@import './pages/lapalettedugout';
 @import './pages/contact';
 
 @import './themes/theme';
@@ -26,25 +26,13 @@
 @import './vendors/bootstrap';
 @import './vendors/jquery-ui';
 
-body {
-  margin: auto;
-  font-family: Arial, sans-serif;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 div.article{
   margin: 65px 0 45px 0; }
 
 div.container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 45px 50px;
-}
+  grid-gap: 45px 50px;  }
 
 section.block-menu {
   height: 450px;
@@ -118,19 +106,19 @@ div.btn{
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 45px;
-}
+  margin-bottom: 45px;  }
 
+/*
 @media screen
 and (min-width:1500px){
   header {
     background-color: red;
   }
 }
-
+*/
 /* ----------- 480px - 819px ----------- */
 @media screen
-and (min-width:481px)
+and (min-width:480px)
 and (max-width:819px){
   div.container {
     display: grid;
@@ -140,9 +128,9 @@ and (max-width:819px){
     margin: 50px 0; }
 }
 
-/* ----------- 0 - 480px ----------- */
+/* ----------- 0 - 479px ----------- */
 @media screen
-and (max-width:480px){
+and (max-width:479px){
   div.container {
     display: grid;
     grid-template-columns: 1fr;
