@@ -1,17 +1,70 @@
-
-h2.title-section {
-  color: black;
-  margin: 0;
-  text-align: center;
-  letter-spacing: -1.3px;
-  font-size: 2em;
-  margin: 45px 0 15px 0;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-weight: 500;
+h2.heading {
+  @include heading-menu;
 }
 
-article{
-  margin-bottom: 100px;
+div.block {
+  @include margin-bttm-block;
+}
+
+section.big-block-menu {
+  @include section-menu;
+  background-color: $bg-color-lne;
+}
+
+header.menu-header {
+  @include header-menu;
+}
+
+i.fab.fa-itunes-note.big {
+  font-size: 7em;
+  background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
+  -webkit-background-clip: text;
+}
+
+h1.menu-heading {
+  @include base-title-menu($font-family-lne-head, black);
+}
+
+section.menu-section {
+  @include bottom-menu-section;
+}
+
+h2.seg-title {
+  @include title-thinks-menu($font-family-lne-para);
+
+  &::before, &::after {
+    @include title-b-a-menu;
+  }
+
+  &::before {
+    @include title-b-only(black);
+  }
+
+  &::after {
+    @include title-a-only(black);
+  }
+}
+
+div.inline {
+  @include para-price-inline;
+}
+
+p.menu-para {
+  @include paragraphe-menu($font-family-lne-para);
+
+  &__price {
+    @include price-menu($font-family-lne-head);
+  }
+}
+
+footer.menu-footer {
+  @include block-footer-menu;
+}
+
+h3.footer-title {
+  margin: 0 0 0 15px;
+  font-size: 30px;
+  font-family: $font-family-lne-head;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$^^^^^^^^^^PAS TOUCHE^^^^^^^^^$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/

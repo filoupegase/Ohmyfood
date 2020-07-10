@@ -38,8 +38,7 @@
   margin-bottom: 130px;
 }
 
-@mixin section-menu($bgcolor) {
-  background-color: $bgcolor;
+@mixin section-menu {
   height: auto;
   width: auto;
   margin-bottom: 0;

@@ -7,7 +7,8 @@ div.block {
 }
 
 section.big-block-menu {
-  @include section-menu($bg-color-lcf);
+  @include section-menu;
+  background-color: $bg-color-lne;
 }
 
 header.menu-header {
@@ -15,7 +16,7 @@ header.menu-header {
 }
 
 h1.menu-heading {
-  @include base-title-menu($font-family-lcf-head, $color-linear-lcf);
+  @include base-title-menu($font-family-lne-head, black);
 }
 
 section.menu-section {
@@ -23,7 +24,7 @@ section.menu-section {
 }
 
 h2.seg-title {
-  @include title-thinks-menu($font-family-lcf-para);
+  @include title-thinks-menu($font-family-lne-para);
 
   &::before, &::after {
     @include title-b-a-menu;
@@ -43,141 +44,13 @@ div.inline {
 }
 
 p.menu-para {
-  @include paragraphe-menu($font-family-lcf-para);
+  @include paragraphe-menu($font-family-lne-para);
 
   &__price {
-    @include price-menu($font-family-lcf-head);
+    @include price-menu($font-family-lne-head);
   }
 }
 
 footer.menu-footer {
   @include block-footer-menu;
 }
-
-/*$$$$$$$$$$$$$$$$$$$$$$$PAS TOUCHE^^^^^^^^^$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-/*
-main.menu {
-  height: auto;
-  width: auto;
-  background-color: #FFFAF6;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 0.5px rgba(0,0,0,0.08);
-  padding: 50px 70px 30px 70px;
-}
-
-header.header-menu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1.titre-menu {
-  margin: 0 90px 60px 90px;
-  font-weight: bolder;
-  font-size: 60px;
-  font-family: 'Snell Roundhand', 'cursive';
-  background: linear-gradient(165deg, #ff8000 0%, #9480b3 50%, #562dd2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.primary{
-  color: #cc6600;
-}
-.secondary{
-  color: #9480b3;
-}
-.purple {
-  color: #562dd2;
-}
-
-div.inline{
-  display: flex;
-  justify-content: space-between;
-}
-section {
-  margin-bottom: 70px;
-}
-section.section-last {
-  margin-top: 40px;
-  margin-bottom: 120px;
-}
-div.padding-section {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-h2.htitre-menu{
-  font-size: 30px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 13px;
-  margin-top: 0px;
-  font-family: 'Snell Roundhand', 'cursive';
-  font-weight: bold;
-}
-h2.primary::before, h2::after {
-  position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 50%;
-  height: 5px;
-  content: '';
-}
-h2.primary::before {
-  margin-left: -50%;
-  text-align: right;
-  background-color: #cc6600
-}
-h2.primary::after {
-  margin-left: 50px;
-  background-color: #cc6600;
-  height: 5px;
-}
-
-h2.secondary::before, h2::after {
-  position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 50%;
-  height: 5px;
-  content: '';
-}
-h2.secondary::before {
-  margin-left: -50%;
-  text-align: right;
-  background-color: #9480b3;
-}
-h2.secondary::after {
-  margin-left: 50px;
-  height: 5px;
-  background-color: #9480b3;
-}
-h2.purple::before, h2::after {
-  position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 50%;
-  height: 5px;
-  content: '';
-}
-h2.purple::before {
-  margin-left: -50%;
-  text-align: right;
-  background-color: #562dd2;
-}
-h2.purple::after {
-  margin-left: 50px;
-  height: 5px;
-  background-color: #562dd2;
-}
-
-p {
-  font-size: 17px;
-  font-weight: bolder;
-  margin-bottom: 0;
-  font-family: 'Apple Chancery', 'cursive';
-}
-
-p.price{
-  font-family: 'Snell Roundhand', 'cursive';
-}*/

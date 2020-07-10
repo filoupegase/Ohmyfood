@@ -7,7 +7,8 @@ div.block {
 }
 
 section.big-block-menu {
-  @include section-menu($bg-color-lne);
+  @include section-menu;
+  background-color: $bg-color-lne;
 }
 
 header.menu-header {
