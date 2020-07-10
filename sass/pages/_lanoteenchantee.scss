@@ -8,10 +8,11 @@ h2.heading {
 
 section.big-block-menu {
   height: auto;
-  width: 950px;
+  width: auto;
   margin-bottom: 0;
   background-color: $bg-color-lne;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 0.5px rgba(0, 0, 0, 0.08);
+  padding: 60px 80px 60px 80px;
 }
 
 header.menu-header {
@@ -29,11 +30,12 @@ i.fab.fa-itunes-note.big {
   -webkit-text-fill-color: transparent;
 }
 
+
 h1.menu-heading {
   font-size: 50px;
-  margin: 0;
   font-family: 'Chalkduster', 'fantasy';
   font-weight: lighter;
+  margin: 0 130px;
 }
 
 section.menu-section {
@@ -59,11 +61,13 @@ h2.seg-title {
     height: 5px;
     content: '';
   }
+
   &::before {
     margin-left: -50%;
     text-align: right;
     background-color: black;
   }
+
   &::after {
     margin-left: 50px;
     background-color: black;
@@ -79,21 +83,25 @@ div.inline {
 p.menu-para {
   font-size: 22px;
   font-weight: bolder;
-  margin-bottom: 8px;
-  margin-top: 21px;
+  margin-top: 30px;
+  margin-bottom: 0;
   font-family: 'Bradley Hand', 'cursive';
+
   &__price {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Chalkduster', 'fantasy';
-    margin-top: 21px;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 }
-footer.menu-footer{
+
+footer.menu-footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-h3.footer-title{
+
+h3.footer-title {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 15px;
