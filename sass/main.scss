@@ -35,6 +35,14 @@ div.container {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 45px 40px;  }
 
+i.fab.fa-itunes-note{
+  font-size: 3.5em;
+  font-weight: 100;
+  background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 section.block-menu {
   height: 450px;
   width: 290px;

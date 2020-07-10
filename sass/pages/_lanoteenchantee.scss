@@ -1,14 +1,103 @@
-div.block{
+div.block {
   @include margin-bttm-block;
 }
+
 h2.heading {
   @include heading-menu;
 }
 
 section.big-block-menu {
-  height: 1100px;
+  height: auto;
   width: 950px;
   margin-bottom: 0;
   background-color: $bg-color-lne;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 0.5px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 0.5px rgba(0, 0, 0, 0.08);
+}
+
+header.menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+i.fab.fa-itunes-note.big {
+  font-size: 7em;
+  font-weight: 100;
+  background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1.menu-heading {
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Chalkduster', 'fantasy';
+  font-weight: lighter;
+}
+
+section.menu-section {
+  margin-bottom: 70px;
+}
+
+h2.seg-title {
+  font-size: 34px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 13px;
+  margin-top: 0;
+  font-weight: lighter;
+  color: black;
+  font-family: 'Bradley Hand', 'cursive';
+
+  &::before, &::after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 5px;
+    content: '';
+  }
+  &::before {
+    margin-left: -50%;
+    text-align: right;
+    background-color: black;
+  }
+  &::after {
+    margin-left: 50px;
+    background-color: black;
+    height: 5px;
+  }
+}
+
+div.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.menu-para {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 8px;
+  margin-top: 21px;
+  font-family: 'Bradley Hand', 'cursive';
+  &__price {
+    font-size: 25px;
+    font-family: 'Chalkduster', 'fantasy';
+    margin-top: 21px;
+  }
+}
+footer.menu-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3.footer-title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: 'Chalkduster', 'fantasy';
+  font-weight: lighter;
 }
