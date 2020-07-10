@@ -6,5 +6,15 @@ $bg-color-lcf: #FFFAF6;
 $bg-color-ldp: #e9f9fb;
 $bg-color-lpg: #F9FFF7;
 
+$font-color-lcf-orange: #cc6600;
+$font-color-lcf-purple: #9480b3;
+$font-color-lcf-darkpurple: #562dd2;
+
+$color-linear-lcf: linear-gradient(165deg, $font-color-lcf-orange 0%, $font-color-lcf-purple 50%, $font-color-lcf-darkpurple 100%);
+
 $font-family-lne-head: 'Chalkduster', 'fantasy';
 $font-family-lne-para: 'Bradley Hand', 'cursive';
+
+$font-family-lcf-head: 'Snell Roundhand', 'cursive';
+$font-family-lcf-para: 'Apple Chancery', 'cursive';
+

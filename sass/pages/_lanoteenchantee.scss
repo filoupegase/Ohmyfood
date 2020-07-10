@@ -21,7 +21,7 @@ i.fab.fa-itunes-note.big {
 }
 
 h1.menu-heading {
-  @include base-title-menu($font-family-lne-head);
+  @include base-title-menu($font-family-lne-head, black);
 }
 
 section.menu-section {
