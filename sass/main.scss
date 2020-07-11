@@ -155,8 +155,6 @@ div.block-animation {
   }
 }
 
-/*transition: transform 1s ease-in-out 0s;*/
-
 div.btn {
   display: flex;
   align-items: center;
@@ -181,7 +179,7 @@ and (min-width:1500px){
     grid-gap: 40px;
   }
   div.article {
-    margin: 50px 0;
+    margin: 70px 0 60px 0;
   }
 }
 
@@ -193,6 +191,80 @@ and (min-width:1500px){
     grid-gap: 20px;
   }
   div.article {
-    margin: 30px 0;
+    margin: 70px 0 60px 0;
+  }
+
+  i.fab.fa-itunes-note {
+    font-size: 2.9em;
+    font-weight: 100;
+    background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  section.block-menu {
+    height: 350px;
+    width: 240px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 0.5px rgba(0, 0, 0, 0.08);
+
+    &--lne {
+      background-color: $bg-color-lne;
+    }
+
+    &--lcf {
+      background-color: $bg-color-lcf;
+    }
+
+    &--ldp {
+      background-color: $bg-color-ldp;
+    }
+
+    &--lpg {
+      background-color: $bg-color-lpg;
+    }
+
+    h2.block-menu__title {
+      margin: 0;
+
+      &--lne {
+        font-weight: 900;
+        font-size: 20px;
+        font-family: 'Chalkduster', 'fantasy';
+      }
+
+      &--lcf {
+        font-weight: bolder;
+        font-size: 23px;
+        font-family: 'Snell Roundhand', 'cursive';
+        background: linear-gradient(165deg, #ff8000 0%, #9480b3 50%, #562dd2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &--ldp {
+        font-weight: lighter;
+        font-size: 25px;
+        font-family: 'Bradley Hand', 'cursive';
+        background: linear-gradient(170deg, #0000cc 0%, #99e6ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &--lpg {
+        font-weight: 100;
+        font-size: 25px;
+        font-family: 'Apple Chancery', 'cursive';
+        background: linear-gradient(140deg, #00802b 0%, #aaff80 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    h3.block-menu__byline {
+      margin-bottom: 0;
+      margin-top: 10px;
+      font-size: 26px;
+    }
   }
 }
