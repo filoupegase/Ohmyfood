@@ -31,18 +31,6 @@ section.menu-section {
 
 h2.seg-title {
   @include title-thinks-menu($font-family-lne-para);
-
-  &::before, &::after {
-    @include title-b-a-menu;
-  }
-
-  &::before {
-    @include title-b-only(black);
-  }
-
-  &::after {
-    @include title-a-only(black);
-  }
 }
 
 div.inline {

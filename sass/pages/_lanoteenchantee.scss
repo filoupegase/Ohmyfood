@@ -31,18 +31,6 @@ section.menu-section {
 
 h2.seg-title {
   @include title-thinks-menu($font-family-lne-para);
-
-  &::before, &::after {
-    @include title-b-a-menu;
-  }
-
-  &::before {
-    @include title-b-only(black);
-  }
-
-  &::after {
-    @include title-a-only(black);
-  }
 }
 
 div.inline {
@@ -66,3 +54,23 @@ h3.footer-title {
   font-size: 30px;
   font-family: $font-family-lne-head;
 }
+
+/*
+div.en-tete {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+/*
+.en-tete img:first-child {
+  display: none;
+}
+.en-tete img:last-child {
+  width: auto;
+}
+.en-tete p {
+  width: auto;
+  font-size: 1.3rem;
+}
+*/
