@@ -1,12 +1,38 @@
 header.header {
   padding: 19px 0;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.08);
   width: 100%;
-  background-color: $color-primary; }
+  background-color: $color-primary;
+}
 
 h1.header-title {
   margin: 0;
   text-align: center;
   letter-spacing: -1.5px;
   font-size: 3.9em;
-  color: $color-secondary;  }
+  color: $color-secondary;
+}
+
+/* ----------- 480px - 819px ----------- */
+@media screen and (min-width: 480px) and (max-width: 819px) {
+
+  h1.header-title {
+    margin: 0;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-size: 3.3em;
+    color: $color-secondary;
+  }
+}
+
+/* ----------- 0 - 479px ----------- */
+@media screen and (max-width: 479px) {
+
+  h1.header-title {
+    margin: 0;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-size: 2.8em;
+    color: $color-secondary;
+  }
+}

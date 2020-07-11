@@ -60,3 +60,29 @@ a.footer-link {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+/* ----------- 0 - 479px ----------- */
+@media screen and (max-width: 479px) {
+
+  footer.footer {
+    padding: 12px 5px;
+    box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $color-primary;
+  }
+
+  a.footer-link {
+    font-size: 1em;
+    margin: 0;
+    color: $color-secondary;
+
+    &:hover {
+      animation: shake 0.5s infinite;
+    }
+  }
+}
