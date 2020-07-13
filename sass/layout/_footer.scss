@@ -65,7 +65,7 @@ a.footer-link {
 @media screen and (max-width: 479px) {
 
   footer.footer {
-    padding: 12px 8px;
+    padding: 16px 25px;
     box-shadow: 2px 0 0 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.08);
     height: auto;
     width: 100%;
@@ -74,6 +74,11 @@ a.footer-link {
     bottom: 0;
     left: 0;
     background-color: $color-primary;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   a.footer-link {
@@ -86,3 +91,4 @@ a.footer-link {
     }
   }
 }
+

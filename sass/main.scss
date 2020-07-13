@@ -188,10 +188,10 @@ and (min-width:1500px){
   div.container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px 0;
   }
   div.article {
-    margin: 70px 0 60px 0;
+    margin: 50px 0 50px 0;
   }
 
   i.fab.fa-itunes-note {

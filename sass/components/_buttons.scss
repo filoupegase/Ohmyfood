@@ -61,3 +61,19 @@ a.btn {
     text-shadow: .25em 0 0 #fdcb46ff, .5em 0 0 #fdcb46ff;
   }
 }
+
+
+/* ----------- 0 - 479px ----------- */
+@media screen and (max-width: 479px) {
+  a.btn {
+    border: 0;
+    line-height: 2;
+    padding: 0 30px;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 0.4px rgba(0, 0, 0, 0.08);
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+}
