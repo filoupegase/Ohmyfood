@@ -1,0 +1,135 @@
+h2.heading {
+  @include heading-menu;
+}
+
+section.big-block-menu {
+  height: auto;
+  width: auto;
+  margin-bottom: 130px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 0.5px rgba(0, 0, 0, 0.08);
+  padding: 60px 80px 60px 80px;
+
+  &--lne {
+    background-color: $bg-color-lne;
+  }
+
+  &--lcf {
+    background-color: $bg-color-lcf;
+  }
+
+  &--ldp {
+    background-color: $bg-color-ldp;
+  }
+
+  &--lpg {
+    background-color: $bg-color-lpg;
+  }
+
+  header.menu-header {
+    @include header-menu;
+  }
+
+  i.fab.fa-itunes-note.big {
+    font-size: 7em;
+    font-weight: 100;
+    background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h1.menu-heading {
+    font-size: 50px;
+    margin: 0 130px;
+
+    &--lne {
+      font-family: $font-family-lne-head;
+      color: black;
+    }
+
+    &--lcf {
+      font-family: $font-family-lcf-head;
+      background: $color-linear-lcf;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--ldp {
+      font-family: $font-family-ldp-head;
+      background: $color-linear-ldp;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--lpg {
+      font-family: $font-family-lpg-head;
+      background: $color-linear-lpg;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  div.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  h2.seg-title {
+    font-size: 34px;
+    text-align: center;
+    margin: 0 10px;
+    color: black;
+
+    &--lne {
+      font-family: $font-family-lne-head;
+      color: black;
+    }
+
+    &--lcf {
+      font-family: $font-family-lcf-head;
+
+      &__orange {
+        color: $font-color-lcf-orange;
+      }
+
+      &__purple {
+        color: $font-color-lcf-purple;
+      }
+
+      &__purpledark {
+        color: $font-color-lcf-darkpurple;
+      }
+    }
+
+    &--ldp {
+      font-family: $font-family-ldp-head;
+    }
+
+    &--lpg {
+      font-family: $font-family-lpg-head;
+    }
+  }
+
+  div.inline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p.menu-para {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  p.menu-para__price {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  footer.menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
