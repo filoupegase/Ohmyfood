@@ -29,14 +29,6 @@ section.big-block-menu {
     @include header-menu;
   }
 
-  i.fab.fa-itunes-note.big {
-    font-size: 7em;
-    font-weight: 100;
-    background: linear-gradient(140deg, #ff0066 0%, #ff9966 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   h1.menu-heading {
     font-size: 50px;
     margin: 0 130px;
@@ -47,6 +39,9 @@ section.big-block-menu {
     }
 
     &--lcf {
+      font-size: 80px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       font-family: $font-family-lcf-head;
       background: $color-linear-lcf;
       -webkit-background-clip: text;
@@ -54,6 +49,9 @@ section.big-block-menu {
     }
 
     &--ldp {
+      font-size: 80px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       font-family: $font-family-ldp-head;
       background: $color-linear-ldp;
       -webkit-background-clip: text;
@@ -61,6 +59,9 @@ section.big-block-menu {
     }
 
     &--lpg {
+      font-size: 80px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       font-family: $font-family-lpg-head;
       background: $color-linear-lpg;
       -webkit-background-clip: text;
@@ -72,7 +73,6 @@ section.big-block-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
   }
 
   h2.seg-title {
@@ -111,25 +111,71 @@ section.big-block-menu {
     }
   }
 
+  div.block-para-menu {
+    padding: 0 50px;
+    margin-bottom: 80px;
+  }
+
   div.inline {
     display: flex;
     justify-content: space-between;
   }
 
   p.menu-para {
-    font-size: 22px;
     margin-top: 30px;
     margin-bottom: 0;
+
+    &--lne {
+      font-family: $font-family-lne-para;
+      font-size: 25px;
+    }
+
+    /*
+        &--lcf {
+          background-color: ;
+        }
+
+        &--ldp {
+          background-color: ;
+        }
+
+        &--lpg {
+          background-color: ;
+        }*/
   }
 
   p.menu-para__price {
-    font-size: 22px;
     margin-top: 30px;
     margin-bottom: 0;
+
+    &--lne {
+      font-family: $font-family-lne-head;
+      font-size: 22px;
+    }
+
+    /*
+        &--lcf {
+          background-color: ;
+        }
+
+        &--ldp {
+          background-color: ;
+        }
+
+        &--lpg {
+          background-color: ;
+        }*/
   }
+
   footer.menu-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  h3.footer-title {
+    font-family: $font-family-lne-head;
+    font-size: 1.8em;
+    margin: 0 15px;
   }
 }
