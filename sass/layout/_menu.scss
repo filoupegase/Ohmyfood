@@ -78,7 +78,7 @@ section.big-block-menu {
   h2.seg-title {
     font-size: 34px;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 8px;
     color: black;
 
     &--lne {
@@ -88,6 +88,7 @@ section.big-block-menu {
 
     &--lcf {
       font-family: $font-family-lcf-head;
+      font-size: 39px;
 
       &__orange {
         color: $font-color-lcf-orange;
@@ -104,6 +105,7 @@ section.big-block-menu {
 
     &--ldp {
       font-family: $font-family-ldp-head;
+      font-size: 39px;
     }
 
     &--lpg {
@@ -111,9 +113,27 @@ section.big-block-menu {
     }
   }
 
+  span::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+  }
+
+  span:hover::after {
+    width: 100%;
+  }
+
+
   div.block-para-menu {
     padding: 0 50px;
     margin-bottom: 80px;
+
+    &__padd {
+      padding: 0 100px;
+    }
   }
 
   div.inline {
@@ -130,18 +150,34 @@ section.big-block-menu {
       font-size: 25px;
     }
 
-    /*
-        &--lcf {
-          background-color: ;
-        }
 
+    &--lcf {
+      font-family: $font-family-lcf-para;
+      font-size: 22px;
+    }
+
+    /*
         &--ldp {
           background-color: ;
         }
 
         &--lpg {
           background-color: ;
-        }*/
+        }
+
+        */
+  }
+
+  #orange {
+    color: $font-color-lcf-orange;
+  }
+
+  #purple {
+    color: $font-color-lcf-purple;
+  }
+
+  #darkpurple {
+    color: $font-color-lcf-darkpurple;
   }
 
   p.menu-para__price {
@@ -153,18 +189,20 @@ section.big-block-menu {
       font-size: 22px;
     }
 
+
+    &--lcf {
+      font-family: $font-family-lcf-head;
+      font-size: 25px;
+    }
+
     /*
-        &--lcf {
-          background-color: ;
-        }
+            &--ldp {
+              background-color: ;
+            }
 
-        &--ldp {
-          background-color: ;
-        }
-
-        &--lpg {
-          background-color: ;
-        }*/
+            &--lpg {
+              background-color: ;
+            }*/
   }
 
   footer.menu-footer {
