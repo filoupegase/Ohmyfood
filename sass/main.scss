@@ -17,10 +17,7 @@
 @import './layout/main';
 @import './layout/menu';
 
-@import './pages/lanoteenchantee';
-@import './pages/lapalettedugout';
-@import './pages/lechicalafrancaise';
-@import './pages/ledelicedespapilles';
+@import './pages/mentionslegales';
 
 @import './themes/theme';
 @import './themes/admin';
@@ -75,6 +72,9 @@ section.block-menu {
       font-weight: 900;
       font-size: 27px;
       font-family: 'Chalkduster', 'fantasy';
+      background: black;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     &--lcf {

@@ -29,7 +29,7 @@ section.big-block-menu {
     @include header-menu;
   }
 
-  h1.menu-heading {
+  h2.menu-heading {
     font-size: 50px;
     margin: 0 130px;
 
@@ -69,6 +69,10 @@ section.big-block-menu {
     }
   }
 
+  section.menu-section__last {
+    margin-bottom: 142px;
+  }
+
   div.section {
     display: flex;
     justify-content: center;
@@ -76,7 +80,7 @@ section.big-block-menu {
   }
 
   h2.seg-title {
-    font-size: 34px;
+    font-size: 39px;
     text-align: center;
     margin: 0 8px;
     color: black;
@@ -84,11 +88,11 @@ section.big-block-menu {
     &--lne {
       font-family: $font-family-lne-head;
       color: black;
+      font-size: 34px;
     }
 
     &--lcf {
       font-family: $font-family-lcf-head;
-      font-size: 39px;
 
       &__orange {
         color: $font-color-lcf-orange;
@@ -105,7 +109,6 @@ section.big-block-menu {
 
     &--ldp {
       font-family: $font-family-ldp-head;
-      font-size: 39px;
     }
 
     &--lpg {
@@ -144,6 +147,7 @@ section.big-block-menu {
   p.menu-para {
     margin-top: 30px;
     margin-bottom: 0;
+    font-size: 24px;
 
     &--lne {
       font-family: $font-family-lne-para;
@@ -153,40 +157,36 @@ section.big-block-menu {
 
     &--lcf {
       font-family: $font-family-lcf-para;
-      font-size: 22px;
     }
 
-    /*
-        &--ldp {
-          background-color: ;
-        }
+    &--ldp {
+      font-family: $font-family-ldp-para;
+    }
 
-        &--lpg {
-          background-color: ;
-        }
-
-        */
+    &--lpg {
+      font-family: $font-family-lpg-para;
+    }
   }
 
-  #orange {
+  .orange {
     color: $font-color-lcf-orange;
   }
 
-  #purple {
+  .purple {
     color: $font-color-lcf-purple;
   }
 
-  #darkpurple {
+  .darkpurple {
     color: $font-color-lcf-darkpurple;
   }
 
   p.menu-para__price {
     margin-top: 30px;
     margin-bottom: 0;
+    font-size: 22px;
 
     &--lne {
       font-family: $font-family-lne-head;
-      font-size: 22px;
     }
 
 
@@ -195,14 +195,13 @@ section.big-block-menu {
       font-size: 25px;
     }
 
-    /*
-            &--ldp {
-              background-color: ;
-            }
+    &--ldp {
+      font-family: $font-family-ldp-head;
+    }
 
-            &--lpg {
-              background-color: ;
-            }*/
+    &--lpg {
+      font-family: $font-family-lpg-head;
+    }
   }
 
   footer.menu-footer {
