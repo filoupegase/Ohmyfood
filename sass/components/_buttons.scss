@@ -34,14 +34,14 @@ a.btn {
     text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   40% {
-    color: #fdcb46ff;
+    color: $color-secondary;
     text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   60% {
-    text-shadow: 0.25em 0 0 #fdcb46ff, 0.5em 0 0 rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 $color-secondary, 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   80%, 100% {
-    text-shadow: .25em 0 0 #fdcb46ff, .5em 0 0 #fdcb46ff;
+    text-shadow: .25em 0 0 $color-secondary, .5em 0 0 $color-secondary;
   }
 }
 
@@ -51,14 +51,14 @@ a.btn {
     text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   40% {
-    color: #fdcb46ff;
+    color: $color-secondary;
     text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   60% {
-    text-shadow: 0.25em 0 0 #fdcb46ff, 0.5em 0 0 rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 $color-secondary, 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   80%, 100% {
-    text-shadow: .25em 0 0 #fdcb46ff, .5em 0 0 #fdcb46ff;
+    text-shadow: .25em 0 0 $color-secondary, .5em 0 0 $color-secondary;
   }
 }
 
